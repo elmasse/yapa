@@ -1,0 +1,28 @@
+{
+  "name": "yapa",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/Parser.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": "",
+  "author": "Maximiliano Fierro",
+  "dependencies": {
+    "cocktail": "~0.5",
+    "cocktail-trait-configurable": "0.0.2",
+    "yalex": "git://github.com/elmasse/yalex.git"
+  },
+  "devDependencies": {
+    "grunt-simple-mocha": "~0.4.0",
+    "chai": "1.4.2",
+    "mocha": "1.8.1",
+    "grunt-mocha": "0.2.1",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1",
+    "sinon-chai": "~2.3.1",
+    "sinon": "~1.8.2"
+  },
+  "license": "MIT"
+}
