@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/elmasse/yapa.png?branch=master)](https://travis-ci.org/elmasse/yapa)
 #yapa (yet another parser)
 
 ##Install
