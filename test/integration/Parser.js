@@ -11,9 +11,9 @@ describe('Parser integration tests', function(){
         source, ret, start, diff, check, expected;
 
     describe('tokenizing ES5', function(){
-        sut = new Parser();
+        sut = Parser.create();
 
-        it('should parse jQuery source', function(){
+        it('should tokenize jQuery source', function(){
 
             source = fs.readFileSync(path.resolve(__dirname, '../files/large.js'), 'utf8');
 
@@ -35,7 +35,7 @@ describe('Parser integration tests', function(){
 
         });
 
-        it('should parse jQuery.min source', function(){
+        it('should tokenize jQuery.min source', function(){
 
             source = fs.readFileSync(path.resolve(__dirname, '../files/large.min.js'), 'utf8');
             start = (new Date()).getTime();
