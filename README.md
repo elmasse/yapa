@@ -13,6 +13,8 @@ npm install git://github.com/elmasse/yapa.git --save
 var Parser = require('yapa'),
     parser, tokens
 
+parser = Parser.create();
+
 //tokenize
 tokens = parser.tokenize('var _this, _is, _a, _js, _parser;');
 
