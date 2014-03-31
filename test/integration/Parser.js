@@ -28,9 +28,16 @@ describe('Parser integration tests', function(){
 
             ret.forEach(function(token, i){
                 expected = check[i];
+                if(expected  && expected.type.toUpperCase() !== token.type) {
+                    console.log('At ' + i + '\n');
+                    console.log('expected:' + expected.type +  '  got:' + token.type);
+                    console.log('expected:' + expected.value +  '  got:' + token.value);
+                    throw new Error();
+                }
                 if(expected){
                     expect(token.type).to.be.eql(expected.type);
                 }                    
+                
             });
 
         });
@@ -51,12 +58,12 @@ describe('Parser integration tests', function(){
                 if(expected){
                     expect(token.type).to.be.eql(expected.type);
                 }
-                // if(expected  && expected.type.toUpperCase() !== token.type) {
-                //     console.log('At ' + i + '\n');
-                //     console.log('expected:' + expected.type +  '  got:' + token.type);
-                //     console.log('expected:' + expected.value +  '  got:' + token.value);
-                //     throw new Error();
-                // }
+                if(expected  && expected.type.toUpperCase() !== token.type) {
+                    console.log('At ' + i + '\n');
+                    console.log('expected:' + expected.type +  '  got:' + token.type);
+                    console.log('expected:' + expected.value +  '  got:' + token.value);
+                    throw new Error();
+                }
             });
         });
     });
