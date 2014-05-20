@@ -36,7 +36,7 @@ describe('Parser integration tests', function(){
                 // }
                 if(expected){
                     expect(token.type).to.be.eql(expected.type);
-                }                    
+                }
 
             });
 
