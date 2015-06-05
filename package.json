@@ -9,8 +9,8 @@
   "repository": "",
   "author": "Maximiliano Fierro",
   "dependencies": {
-    "cocktail": "~0.5",
-    "cocktail-trait-configurable": "0.0.2",
+    "cocktail": "~0.7.1",
+    "cocktail-trait-configurable": "1.1.0",
     "yalex": "0.0.1"
   },
   "devDependencies": {
